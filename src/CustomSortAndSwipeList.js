@@ -201,7 +201,7 @@ CustomSortAndSwipeList.defaultProps = {
   },
 
   animatedRowViewStyle: {
-    height: 90 + 6,
+//     height: 90 + 6,
     width: window.width,
     alignItems: "center",
     justifyContent: "center",
