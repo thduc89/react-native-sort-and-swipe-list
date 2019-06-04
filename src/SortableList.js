@@ -119,7 +119,8 @@ export default class SortableList extends Component {
       });
     } else if (order && nextOrder && !shallowEqual(order, nextOrder)) {
       // justin here .reverse()
-      this.setState({ order: nextOrder.reverse() });
+//       this.setState({ order: nextOrder.reverse() });
+      this.setState({ order: nextOrder });
     }
   }
 
@@ -244,7 +245,7 @@ export default class SortableList extends Component {
     // justin more..slice.reverse()
     const locationArray = order
       .slice()
-      .reverse()
+//       .reverse()
       .map((key, index) => {
         const location = { x: 0, y: 0 };
         if (rowsLayouts && rowsLayouts[key]) {
